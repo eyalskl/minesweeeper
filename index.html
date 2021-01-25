@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Minesweeper! </title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="init()">
+    <h1> Minesweeper </h1>
+
+    <div class="lifes-container">
+
+    </div>
+
+    <div class="timer-container">
+        <span> </span>
+    </div>
+
+    <div class="levels-container">
+        <button class="easy active" onclick="init(4, 2, 'easy')"> 🟢 Easy </button>
+        <button class="medium" onclick="init(8, 4, 'medium')"> 🟠 Medium </button>
+        <button class="hard" onclick="init(12, 20, 'hard')"> 🔴 Hard </button>
+    </div>
+
+    <span class="smiley-container" onclick="smileyReset()"> </span>
+
+    <table>
+        <tbody class="board-container">
+
+        </tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
